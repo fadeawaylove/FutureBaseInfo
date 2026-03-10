@@ -97,6 +97,7 @@
         .nav-icon.rb { background: linear-gradient(135deg, #f093fb, #f5576c); }
         .nav-icon.sa { background: linear-gradient(135deg, #4facfe, #00f2fe); }
         .nav-icon.fg { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .nav-icon.hc { background: linear-gradient(135deg, #fa709a, #fee140); }
 
         .nav-text h3 {
             font-size: 16px;
@@ -412,6 +413,13 @@
                     <div class="nav-text">
                         <h3>玻璃</h3>
                         <p>郑商所 · 建材</p>
+                    </div>
+                </li>
+                <li class="nav-item" onclick="showProduct('hc')">
+                    <div class="nav-icon hc">HC</div>
+                    <div class="nav-text">
+                        <h3>热卷</h3>
+                        <p>上期所 · 钢材</p>
                     </div>
                 </li>
             </ul>
@@ -982,6 +990,152 @@
                             <div style="margin-top: 10px;">
                                 <span class="tag">出口导向</span>
                                 <span class="tag">汇率敏感</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 热卷 HC -->
+            <section id="hc" class="content-section">
+                <div class="header">
+                    <span class="code">HC</span>
+                    <h2>热卷期货</h2>
+                    <span class="exchange">上海期货交易所 · 2014年3月上市</span>
+                </div>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">10吨</div>
+                        <div class="stat-label">交易单位/手</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">1元</div>
+                        <div class="stat-label">最小变动价位</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">±10%</div>
+                        <div class="stat-label">涨跌停板</div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>合约规格</h3>
+                        <div class="info-item">
+                            <span class="info-label">标的物</span>
+                            <span class="info-value">热轧卷板（Hot Rolled Coil）</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">牌号</span>
+                            <span class="info-value">Q235B / Q345B 等</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">厚度</span>
+                            <span class="info-value">1.5-25mm</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">宽度</span>
+                            <span class="info-value">900-2130mm</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>市场特点</h3>
+                        <div class="info-item">
+                            <span class="info-label">全球地位</span>
+                            <span class="info-value">全球最大热卷生产国</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">产能分布</span>
+                            <span class="info-value">河北、江苏、山东为主</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">与螺纹钢关系</span>
+                            <span class="info-value">卷螺差套利</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">成本结构</span>
+                            <span class="info-value">铁矿50%+焦炭25%+废钢15%</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>下游需求</h3>
+                        <div class="info-item">
+                            <span class="info-label">汽车</span>
+                            <span class="info-value">25-30%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">工程机械</span>
+                            <span class="info-value">15-20%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">船舶</span>
+                            <span class="info-value">10-15%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">钢结构/基建</span>
+                            <span class="info-value">20-25%</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>价格影响因素</h3>
+                        <div class="info-item">
+                            <span class="info-label">供应端</span>
+                            <span class="info-value">热卷产线检修、产能利用率</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">需求端</span>
+                            <span class="info-value">汽车产销、工程机械、造船</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">成本端</span>
+                            <span class="info-value">铁矿石、焦炭、废钢</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">替代品</span>
+                            <span class="info-value">螺纹钢（卷螺差）</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>与螺纹钢的关系：卷螺差</h4>
+                    <p>热卷与螺纹钢同属钢材，但下游需求不同。汽车行业景气时热卷强于螺纹钢，基建地产火热时螺纹钢强于热卷。卷螺差（HC-RB）是重要套利指标。</p>
+                </div>
+
+                <div class="chain-section">
+                    <h3>产业链结构</h3>
+                    <div class="chain-flow">
+                        <div class="chain-node supply">铁矿石/焦炭</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node">高炉/转炉</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node">热轧产线</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node demand">汽车/机械/造船</div>
+                    </div>
+                </div>
+
+                <div class="global-section">
+                    <h3>外盘关联</h3>
+                    <div class="global-content">
+                        <div class="global-item">
+                            <h4>国际期货</h4>
+                            <p>CME热轧卷板期货(HR)是北美定价基准。SGX有热卷掉期。中国是全球最大热卷生产国和消费国，定价话语权强。</p>
+                            <div style="margin-top: 10px;">
+                                <span class="tag">CME热卷</span>
+                                <span class="tag">定价中心</span>
+                            </div>
+                        </div>
+                        <div class="global-item">
+                            <h4>定价特点</h4>
+                            <p>热卷出口以美元计价，汇率影响成本。与螺纹钢形成卷螺差套利，是钢材系最活跃的套利组合之一。</p>
+                            <div style="margin-top: 10px;">
+                                <span class="tag">美元计价</span>
+                                <span class="tag">卷螺差</span>
                             </div>
                         </div>
                     </div>
