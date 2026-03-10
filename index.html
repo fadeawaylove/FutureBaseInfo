@@ -98,6 +98,7 @@
         .nav-icon.sa { background: linear-gradient(135deg, #4facfe, #00f2fe); }
         .nav-icon.fg { background: linear-gradient(135deg, #43e97b, #38f9d7); }
         .nav-icon.hc { background: linear-gradient(135deg, #fa709a, #fee140); }
+        .nav-icon.v { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
 
         .nav-text h3 {
             font-size: 16px;
@@ -162,8 +163,9 @@
         /* 信息卡片网格 */
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 25px;
+            margin-top: 40px;
             margin-bottom: 40px;
         }
 
@@ -420,6 +422,13 @@
                     <div class="nav-text">
                         <h3>热卷</h3>
                         <p>上期所 · 钢材</p>
+                    </div>
+                </li>
+                <li class="nav-item" onclick="showProduct('v')">
+                    <div class="nav-icon v">V</div>
+                    <div class="nav-text">
+                        <h3>PVC</h3>
+                        <p>大商所 · 化工</p>
                     </div>
                 </li>
             </ul>
@@ -1142,6 +1151,147 @@
                             <div style="margin-top: 10px;">
                                 <span class="tag">美元计价</span>
                                 <span class="tag">卷螺差</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PVC V -->
+            <section id="v" class="content-section">
+                <div class="header">
+                    <span class="code">V</span>
+                    <h2>PVC期货</h2>
+                    <span class="exchange">大连商品交易所 · 2009年5月上市</span>
+                </div>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">5吨</div>
+                        <div class="stat-label">交易单位/手</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">1元</div>
+                        <div class="stat-label">最小变动价位</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">±8%</div>
+                        <div class="stat-label">涨跌停板</div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>合约规格</h3>
+                        <div class="info-item">
+                            <span class="info-label">标的物</span>
+                            <span class="info-value">PVC树脂（聚氯乙烯）</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交割品级</span>
+                            <span class="info-value">SG5型树脂（优等品）</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交易时间</span>
+                            <span class="info-value">09:00-15:00, 21:00-23:00</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交割月份</span>
+                            <span class="info-value">1-12月</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>市场特点</h3>
+                        <div class="info-item">
+                            <span class="info-label">全球产能</span>
+                            <span class="info-value">中国占45%以上</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">年产能</span>
+                            <span class="info-value">超2800万吨</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">主要工艺</span>
+                            <span class="info-value">电石法/乙烯法</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">定价权</span>
+                            <span class="info-value">中国是全球定价中心</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>下游需求</h3>
+                        <div class="info-item">
+                            <span class="info-label">管材管件</span>
+                            <span class="info-value">30%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">型材门窗</span>
+                            <span class="info-value">20%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">薄膜包装</span>
+                            <span class="info-value">18%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">电线电缆</span>
+                            <span class="info-value">12%</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>价格影响因素</h3>
+                        <div class="info-item">
+                            <span class="info-label">供应端</span>
+                            <span class="info-value">产能开工、检修计划</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">成本端</span>
+                            <span class="info-value">电石/乙烯、煤炭</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">需求端</span>
+                            <span class="info-value">房地产、基建</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">进出口</span>
+                            <span class="info-value">印度、东南亚需求</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chain-section">
+                    <h3>产业链结构</h3>
+                    <div class="chain-flow">
+                        <div class="chain-node supply">石灰石/煤炭</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node">电石/乙烯</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node">PVC生产</span>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node demand">型材/管材/薄膜</div>
+                    </div>
+                </div>
+
+                <div class="global-section">
+                    <h3>外盘关联</h3>
+                    <div class="global-content">
+                        <div class="global-item">
+                            <h4>国际期货</h4>
+                            <p>全球无其他PVC期货品种。中国是全球最大PVC生产国和消费国，大商所V期货是全球唯一的PVC期货定价基准。</p>
+                            <div style="margin-top: 10px;">
+                                <span class="tag">全球唯一</span>
+                                <span class="tag">定价中心</span>
+                            </div>
+                        </div>
+                        <div class="global-item">
+                            <h4>定价特点</h4>
+                            <p>PVC出口以美元计价，印度、东南亚是主要出口市场。人民币汇率波动影响出口利润。电石法PVC成本受煤炭价格影响显著。</p>
+                            <div style="margin-top: 10px;">
+                                <span class="tag">出口导向</span>
+                                <span class="tag">能源关联</span>
                             </div>
                         </div>
                     </div>
