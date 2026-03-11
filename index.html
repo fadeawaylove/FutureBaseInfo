@@ -100,6 +100,7 @@
         .nav-icon.hc { background: linear-gradient(135deg, #fa709a, #fee140); }
         .nav-icon.v { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
         .nav-icon.si { background: linear-gradient(135deg, #5ee7df, #b490ca); }
+        .nav-icon.ss { background: linear-gradient(135deg, #96c93d, #0abfbc); }
 
         .nav-text h3 {
             font-size: 16px;
@@ -437,6 +438,13 @@
                     <div class="nav-text">
                         <h3>工业硅</h3>
                         <p>广期所 · 新能源金属</p>
+                    </div>
+                </li>
+                <li class="nav-item" onclick="showProduct('ss')">
+                    <div class="nav-icon ss">SS</div>
+                    <div class="nav-text">
+                        <h3>不锈钢</h3>
+                        <p>上期所 · 特种钢材</p>
                     </div>
                 </li>
             </ul>
@@ -1448,6 +1456,158 @@
                         <div class="global-item">
                             <h4>出口流向</h4>
                             <p>中国是全球最大工业硅出口国，年出口60-80万吨。主要流向日本、韩国、欧洲、东南亚。出口FOB价格参考SI期货定价。</p>
+                            <div style="margin-top: 10px;">
+                                <span class="tag">出口导向</span>
+                                <span class="tag">汇率敏感</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 不锈钢 SS -->
+            <section id="ss" class="content-section">
+                <div class="header">
+                    <span class="code">SS</span>
+                    <h2>不锈钢期货</h2>
+                    <span class="exchange">上海期货交易所 · 2019年9月上市</span>
+                </div>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">5吨</div>
+                        <div class="stat-label">交易单位/手</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">5元</div>
+                        <div class="stat-label">最小变动价位</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">±10%</div>
+                        <div class="stat-label">涨跌停板</div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>合约规格</h3>
+                        <div class="info-item">
+                            <span class="info-label">标的物</span>
+                            <span class="info-value">304冷轧不锈钢卷板</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交割品级</span>
+                            <span class="info-value">300系奥氏体不锈钢</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交易时间</span>
+                            <span class="info-value">09:00-15:00, 21:00-23:00</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交割月份</span>
+                            <span class="info-value">1-12月</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>市场特点</h3>
+                        <div class="info-item">
+                            <span class="info-label">全球地位</span>
+                            <span class="info-value">全球最大生产国和消费国</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">年产能</span>
+                            <span class="info-value">超4000万吨</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">300系占比</span>
+                            <span class="info-value">约80%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">产业集中度</span>
+                            <span class="info-value">头部企业集中</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>下游需求</h3>
+                        <div class="info-item">
+                            <span class="info-label">建筑装饰</span>
+                            <span class="info-value">28%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">家电行业</span>
+                            <span class="info-value">22%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">机械设备</span>
+                            <span class="info-value">18%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">汽车交通</span>
+                            <span class="info-value">15%</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>价格影响因素</h3>
+                        <div class="info-item">
+                            <span class="info-label">原料成本</span>
+                            <span class="info-value">镍铬价格、镍铁</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">供应端</span>
+                            <span class="info-value">产能开工、检修计划</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">需求端</span>
+                            <span class="info-value">房地产、家电出口</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">外盘联动</span>
+                            <span class="info-value">LME镍价格</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>成本结构：镍铬原料占比极高</h4>
+                    <p style="margin-bottom: 15px;"><strong>304不锈钢原料成本构成中，镍铬占比超过70%，与镍期货价格高度相关：</strong></p>
+                    <ul style="margin-left: 20px; color: #555; line-height: 1.8;">
+                        <li><strong>镍含量：</strong> 304不锈钢含镍约8-10%，镍价每波动1万元/吨，不锈钢成本波动约800-1000元/吨</li>
+                        <li><strong>铬含量：</strong> 含铬约18%，铬铁价格变动同样影响成本</li>
+                        <li><strong>生产工艺：</strong> 一体化炼钢（镍矿→镍铁→不锈钢）vs 外购镍铁生产，成本差异显著</li>
+                    </ul>
+                    <p style="margin-top: 15px; background: #fff3cd; padding: 10px; border-radius: 5px; border-left: 4px solid #ffc107;"><strong>交易启示：</strong>不锈钢价格走势通常滞后于LME镍价，但长期趋势一致。跨品种套利可关注SS与LME镍的价差。一体化钢企成本优势明显，行业利润受镍铬价差影响。</p>
+                </div>
+
+                <div class="chain-section">
+                    <h3>产业链结构</h3>
+                    <div class="chain-flow">
+                        <div class="chain-node supply">镍矿/铬矿</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node">镍铁/铬铁</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node">不锈钢冶炼</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node demand">家电/建筑/汽车</div>
+                    </div>
+                </div>
+
+                <div class="global-section">
+                    <h3>外盘关联</h3>
+                    <div class="global-content">
+                        <div class="global-item">
+                            <h4>国际期货</h4>
+                            <p>全球唯一的专用不锈钢期货品种。原料端高度依赖LME镍期货定价，不锈钢原料成本锚定国际镍价。印尼镍生铁(NPI)出口政策对成本影响重大。</p>
+                            <div style="margin-top: 10px;">
+                                <span class="tag">全球首创</span>
+                                <span class="tag">镍成本联动</span>
+                            </div>
+                        </div>
+                        <div class="global-item">
+                            <h4>进出口格局</h4>
+                            <p>中国是全球最大不锈钢出口国，年出口400万吨左右，主要流向韩国、印度、东南亚和欧盟。不锈钢出口以美元计价，人民币汇率和关税政策影响出口竞争力。</p>
                             <div style="margin-top: 10px;">
                                 <span class="tag">出口导向</span>
                                 <span class="tag">汇率敏感</span>
