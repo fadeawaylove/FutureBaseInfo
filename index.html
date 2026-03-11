@@ -99,6 +99,7 @@
         .nav-icon.fg { background: linear-gradient(135deg, #43e97b, #38f9d7); }
         .nav-icon.hc { background: linear-gradient(135deg, #fa709a, #fee140); }
         .nav-icon.v { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+        .nav-icon.si { background: linear-gradient(135deg, #5ee7df, #b490ca); }
 
         .nav-text h3 {
             font-size: 16px;
@@ -429,6 +430,13 @@
                     <div class="nav-text">
                         <h3>PVC</h3>
                         <p>大商所 · 化工</p>
+                    </div>
+                </li>
+                <li class="nav-item" onclick="showProduct('si')">
+                    <div class="nav-icon si">SI</div>
+                    <div class="nav-text">
+                        <h3>工业硅</h3>
+                        <p>广期所 · 新能源金属</p>
                     </div>
                 </li>
             </ul>
@@ -1292,6 +1300,157 @@
                             <div style="margin-top: 10px;">
                                 <span class="tag">出口导向</span>
                                 <span class="tag">能源关联</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 工业硅 SI -->
+            <section id="si" class="content-section">
+                <div class="header">
+                    <span class="code">SI</span>
+                    <h2>工业硅期货</h2>
+                    <span class="exchange">广州期货交易所 · 2022年12月上市</span>
+                </div>
+
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">5吨</div>
+                        <div class="stat-label">交易单位/手</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">5元</div>
+                        <div class="stat-label">最小变动价位</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">±10%</div>
+                        <div class="stat-label">涨跌停板</div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>合约规格</h3>
+                        <div class="info-item">
+                            <span class="info-label">标的物</span>
+                            <span class="info-value">工业硅（金属硅）</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交割品级</span>
+                            <span class="info-value">Si5530 / Si4210 / Si4110</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交易时间</span>
+                            <span class="info-value">09:00-15:00, 21:00-23:00</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">交割月份</span>
+                            <span class="info-value">1-12月</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>市场特点</h3>
+                        <div class="info-item">
+                            <span class="info-label">全球产能</span>
+                            <span class="info-value">中国占75%以上</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">年产能</span>
+                            <span class="info-value">超600万吨</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">产能分布</span>
+                            <span class="info-value">新疆、云南、四川为主</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">成本结构</span>
+                            <span class="info-value">电力成本占35-40%</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>下游需求</h3>
+                        <div class="info-item">
+                            <span class="info-label">有机硅</span>
+                            <span class="info-value">35-40%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">多晶硅（光伏）</span>
+                            <span class="info-value">30-35%（快速增长）</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">铝合金</span>
+                            <span class="info-value">20-25%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">出口</span>
+                            <span class="info-value">约10%</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>价格影响因素</h3>
+                        <div class="info-item">
+                            <span class="info-label">供应端</span>
+                            <span class="info-value">产能开工、丰枯水期</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">成本端</span>
+                            <span class="info-value">电力、煤炭、硅石</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">需求端</span>
+                            <span class="info-value">光伏装机、有机硅开工</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">政策</span>
+                            <span class="info-value">能耗双控、产能置换</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>季节性特征：丰枯水期影响显著</h4>
+                    <p style="margin-bottom: 15px;"><strong>西南地区（云南、四川）是水力发电主要产区，电力成本决定生产利润：</strong></p>
+                    <ul style="margin-left: 20px; color: #555; line-height: 1.8;">
+                        <li><strong>丰水期（6-10月）：</strong> 电力成本低，西南产能开工率提升，供应增加，价格承压</li>
+                        <li><strong>枯水期（11-5月）：</strong> 电力成本上升，西南产能减产，供应收缩，价格支撑强</li>
+                    </ul>
+                    <p style="margin-top: 15px; background: #fff3cd; padding: 10px; border-radius: 5px; border-left: 4px solid #ffc107;"><strong>交易启示：</strong>关注云南、四川的来水情况和电力政策。枯水期合约通常有溢价，丰水期合约贴水。新疆产能（火电）全年稳定，是价格底部支撑。</p>
+                </div>
+
+                <div class="chain-section">
+                    <h3>产业链结构</h3>
+                    <div class="chain-flow">
+                        <div class="chain-node supply">硅石/煤炭/电力</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node">工业硅生产</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node">有机硅/多晶硅/合金</div>
+                        <span class="chain-arrow">→</span>
+                        <div class="chain-node demand">光伏/建筑/汽车</div>
+                    </div>
+                </div>
+
+                <div class="global-section">
+                    <h3>外盘关联</h3>
+                    <div class="global-content">
+                        <div class="global-item">
+                            <h4>国际期货</h4>
+                            <p>全球首个工业硅期货品种。伦敦金属交易所(LME)曾计划推出但未果。广期所SI期货有望成为全球工业硅定价基准。</p>
+                            <div style="margin-top: 10px;">
+                                <span class="tag">全球首创</span>
+                                <span class="tag">定价中心</span>
+                            </div>
+                        </div>
+                        <div class="global-item">
+                            <h4>出口流向</h4>
+                            <p>中国是全球最大工业硅出口国，年出口60-80万吨。主要流向日本、韩国、欧洲、东南亚。出口FOB价格参考SI期货定价。</p>
+                            <div style="margin-top: 10px;">
+                                <span class="tag">出口导向</span>
+                                <span class="tag">汇率敏感</span>
                             </div>
                         </div>
                     </div>
