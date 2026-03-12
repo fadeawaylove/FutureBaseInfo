@@ -41,7 +41,7 @@ The site is automatically deployed to GitHub Pages on push to the `master` branc
 3. Update CSS icon classes (`.nav) if adding new color scheme
 4. Follow existing section structure for consistency
 
-**CSS Icon Classes:** Currently defined: `.sp`, `.rb`, `.sa`, `.fg`, `.hc`, `.v`, `.si`, `.ss`, `.lh`
+**CSS Icon Classes:** Currently defined: `.sp`, `.rb`, `.sa`, `.fg`, `.hc`, `.v`, `.si`, `.ss`, `.lh`, `.sh`
 
 ## Supported Products
 
@@ -55,4 +55,5 @@ The site is automatically deployed to GitHub Pages on push to the `master` branc
 | V | PVC | 大商所 | 化工 |
 | SI | 工业硅 (Industrial Silicon) | 广期所 | 新能源金属 |
 | SS | 不锈钢 (Stainless Steel) | 上期所 | 特种钢材 |
+| SH | 烧碱 (Caustic Soda) | 郑商所 | 基础化工 |
 | LH | 生猪 (Live Hogs) | 大商所 | 农产品 |
