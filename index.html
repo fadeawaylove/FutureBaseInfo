@@ -390,50 +390,51 @@
         .position-calculator {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 12px;
-            padding: 20px;
-            margin: 25px 0;
+            padding: 12px 20px;
+            margin: 15px 0 8px 0;
             color: white;
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-        }
-
-        .calculator-title {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 8px;
-        }
-
-        .calculator-title::before {
-            content: "🧮";
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .calculator-inputs {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            display: flex;
             gap: 12px;
-            margin-bottom: 15px;
+            align-items: flex-start;
         }
 
         .calc-input-group {
             display: flex;
-            flex-direction: column;
-            gap: 4px;
+            align-items: center;
+            gap: 6px;
         }
 
         .calc-input-group label {
-            font-size: 12px;
+            font-size: 13px;
             opacity: 0.9;
+            white-space: nowrap;
         }
 
         .calc-input-group input {
-            padding: 8px 10px;
+            padding: 6px 10px;
             border: none;
             border-radius: 6px;
             font-size: 14px;
             background: rgba(255, 255, 255, 0.9);
             color: #333;
+            width: 110px;
+            text-align: left;
+            -moz-appearance: textfield;
+            -webkit-appearance: none;
+        }
+
+        .calc-input-group input::-webkit-outer-spin-button,
+        .calc-input-group input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
 
         .calc-input-group input:focus {
@@ -442,22 +443,21 @@
 
         .calc-result {
             background: rgba(255, 255, 255, 0.15);
-            border-radius: 8px;
-            padding: 12px 15px;
+            border-radius: 6px;
+            padding: 6px 14px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
 
         .calc-result-label {
-            font-size: 13px;
+            font-size: 12px;
             opacity: 0.9;
+            white-space: nowrap;
         }
 
         .calc-result-value {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             color: #4ade80;
         }
@@ -576,19 +576,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="20" data-tick-size="2">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 20元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -740,19 +739,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="10" data-tick-size="1">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 10元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -908,19 +906,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="20" data-tick-size="2">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 20元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -1076,19 +1073,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="20" data-tick-size="2">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 20元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -1255,19 +1251,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="10" data-tick-size="1">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 10元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -1428,19 +1423,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="5" data-tick-size="1">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 5元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -1596,19 +1590,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="25" data-tick-size="5">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 25元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -1774,19 +1767,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="25" data-tick-size="5">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 25元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -1949,19 +1941,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="60" data-tick-size="2">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 60元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
@@ -2124,19 +2115,18 @@
 
                 <!-- 仓位计算器 -->
                 <div class="position-calculator" data-tick-value="80" data-tick-size="5">
-                    <div class="calculator-title">仓位计算器（每跳盈亏 80元）</div>
                     <div class="calculator-inputs">
                         <div class="calc-input-group">
-                            <label>最大亏损金额（元）</label>
-                            <input type="number" class="max-loss" placeholder="如: 10000" min="0" step="100">
+                            <label>金额</label>
+                            <input type="number" class="max-loss" min="0" step="100">
                         </div>
                         <div class="calc-input-group">
-                            <label>止损价格差（元）</label>
-                            <input type="number" class="price-diff" placeholder="如: 50" min="0" step="1">
+                            <label>价差</label>
+                            <input type="number" class="price-diff" min="0" step="1">
                         </div>
                     </div>
                     <div class="calc-result">
-                        <span class="calc-result-label">最大开仓手数</span>
+                        <span class="calc-result-label">手数</span>
                         <span class="calc-result-value">-</span>
                     </div>
                 </div>
